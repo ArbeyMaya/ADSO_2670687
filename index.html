@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF8">
         <title>Iniciando con GIT</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Concepto de GIT</h1>
+        <h1 id="t1">Concepto de GIT</h1>
        
         <img src="img/GITHUB.jpeg" alt="Error de imagen">
 
-        <p>GitaHub es una plataforma de alojamiento que nos ofrece un servicio en la nube que aloja un sistema de control de versiones llamado Git, esto nos permite gestionar proyectos y controlar versiones de codigos y es usado principalmente por los desarrolladores.</p>
+        <p class="p1">GitaHub es una plataforma de alojamiento que nos ofrece un servicio en la nube que aloja un sistema de control de versiones llamado Git, esto nos permite gestionar proyectos y controlar versiones de codigos y es usado principalmente por los desarrolladores.</p>
 
-        <h2>Principales comandos de Git</h2>
+        <h2 class="pcg">Principales comandos de Git</h2>
         <ul>
             <li><strong>GIT INIT:</strong>Este comanando funciona para iniciar un proyecto en git.</li>
             <li><strong>GIT CONFIG:</strong>Este comando nos sirve para definir valores de configuración de Git a nivel de un proyecto global o local.</li>
@@ -99,7 +100,6 @@
             <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required=""><br><br>
             <label for="Email">Email</label>
             <input type="email" name="email" id="email" placeholder="escriba su correo electronico" required=""><br><br>
-            <button value="Registrar">Registrar</button><br><br>
 
             <label for="contraseña">Contraseña</label>
             <input type="password" pattern=".{8,}"><br><br>
@@ -107,8 +107,51 @@
             <label for="start">Fecha</label>
             <input type="date" id="start" name="trip-start" value="" min="" max=""><br><br>
 
-            <label for="tentacles">Numero telefonico</label>
-            <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+            <label for="tentacles">Numeros</label>
+            <input type="number" id="tentacles" name="tentacles" min="10" max="100"><br><br>
+
+            <input type="range" min="10" max="30"><br><br>
+
+            <label for="phone">numero telefonico</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{1,10}" required><br><br><br>
+
+            <label for="">seleccion multiple</label><br><br>
+            <input type="radio" name="futbol" value="1"futbol>Futbol <br><br>
+            <input type="radio" name="Bicicleta" value="2"Bicicleta>Bicicleta <br><br>
+            <input type="radio" name="Natacion" value="3"Natacion>Natacion <br><br>
+
+            <p>Genero: <br>
+                <input type="radio" name="hm" value="h">Hombre
+                <input type="radio" name="hm" value="h">Mujer
+            </p>
+            
+            <form action="#">
+                <label for="lang">Lenguajes</label><br>
+                <select name="lenguajes" id="lang">
+                    <option value="selecciona">Idioma</option>
+                    <option value="opcion 1">Español</option>
+                    <option value="opcion 1">Ingles</option>
+                    <option value="opcion 1">Frances</option>
+                    <option value="opcion 1">Italiano</option>
+                    <option value="opcion 1">Japones</option>
+                    <option value="opcion 1">Chino</option>
+                    <option value="opcion 1">Ruso</option>
+                    <option value="opcion 1">Catalán</option>
+                </select>
+            </form><br><br><br>
+
+            <input type="file" name="file" id="file" accept="image/*" multiple><br><br>
+
+            <button value="Registrar">Registrar</button><br><br>
+
+            <h2> ETIQUETAS DE MULTIMEDIA</h2>
+            <video src="../HTML/Videos/promo.mp4" width="640" height="480" autoplay controls></video><br><br>
+
+            <h3>AUDIO</h3>
+            <audio controls>
+                <source src="Audios/himno.mp3" type="audio/mp3">
+            </audio>
+ 
         </form>
     </body>
-</html>
+</html>  
